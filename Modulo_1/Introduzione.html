@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 1: Introduzione ai Sistemi Informatici</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- STILE IDENTICO A SOFTWARE_OS.HTML --- */
+        :root {
+            --primary: #2563eb;
+            --accent: #8b5cf6;
+            --dark-bg: #0f172a;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-light: #f8fafc;
+            --text-muted: #cbd5e1;
+            --code-bg: rgba(0, 0, 0, 0.3);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: var(--text-light);
+            min-height: 100vh;
+            padding-bottom: 80px;
+        }
+
+        /* Navbar Glass */
+        .navbar-glass {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        .page-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+        }
+
+        /* Glass Cards */
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 25px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+            color: #fff;
+        }
+
+        .card-img-custom {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        h3 { font-family: 'Montserrat', sans-serif; color: #fff; font-size: 1.25rem; font-weight: 600; margin-bottom: 15px; }
+        h4 { color: var(--accent); font-size: 1rem; margin-top: 15px; font-weight: 600; }
+        p, li { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
+        strong { color: #fff; }
+
+        .btn-back {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 50px;
+            padding: 8px 20px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .btn-back:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .badge-info {
+            background: rgba(139, 92, 246, 0.2);
+            color: var(--accent);
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        /* Stile codice e matematica */
+        .math-box {
+            background: rgba(0, 0, 0, 0.2);
+            border-left: 3px solid var(--primary);
+            padding: 15px;
+            border-radius: 0 10px 10px 0;
+            font-family: 'JetBrains Mono', monospace;
+            color: #e2e8f0;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        ul.custom-list { list-style: none; padding-left: 0; }
+        ul.custom-list li { position: relative; padding-left: 20px; margin-bottom: 8px; }
+        ul.custom-list li::before {
+            content: "•"; color: var(--accent); font-weight: bold; position: absolute; left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar-glass">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="page-title h4">Modulo 1: Introduzione</h1>
+            <div>
+                <a href="C:\Users\Alessandro\Desktop\Università\Home.html" class="btn-back me-2">Home 🏠</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="glass-card">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h2 class="h3 mb-3 text-white">Introduzione ai Sistemi Informatici</h2>
+                            <p class="lead mb-0">
+                                L’esigenza di quantificare, registrare ed elaborare dati è intrinseca alla natura umana e ha guidato il progresso tecnologico attraverso i millenni. In questo modulo esploreremo le origini, le definizioni e l'architettura dei computer.
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="https://placehold.co/400x250/2563eb/FFF?text=Storia+Informatica" alt="Intro Informatica" class="img-fluid rounded-4 shadow border border-secondary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">1. Cenni Storici</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="glass-card">
+                    <img src="https://placehold.co/600x350/475569/FFF?text=Origini+1642" class="card-img-custom" alt="Pascalina">
+                    <span class="badge-info">Antichità - 1600</span>
+                    <h3>Le Origini</h3>
+                    <p>Dalle tavolette babilonesi per calcoli astronomici alla <strong>Pascalina (1642)</strong>, il primo calcolatore meccanico a ingranaggi inventato da Blaise Pascal.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass-card">
+                    <img src="https://placehold.co/600x350/334155/FFF?text=Babbage+IBM" class="card-img-custom" alt="Babbage">
+                    <span class="badge-info">1800 - 1900</span>
+                    <h3>Babbage & IBM</h3>
+                    <p>Charles Babbage progetta la <em>Macchina Analitica</em> (memoria + calcolo). Nel 1890 Hollerith fonda la società che diverrà <strong>IBM</strong>.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass-card">
+                    <img src="https://placehold.co/600x350/1e293b/FFF?text=Era+Elettronica" class="card-img-custom" alt="Digitale">
+                    <span class="badge-info">1940 - Oggi</span>
+                    <h3>L'Era Digitale</h3>
+                    <p>Dalla decifrazione di <em>Enigma</em> (Turing) all'invenzione del <strong>Transistor (1947)</strong> fino alla diffusione di massa del PC IBM (1981).</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Cos'è l'Informatica</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="glass-card">
+                    <span class="badge-info">Definizioni</span>
+                    <h3>Dato vs Informazione</h3>
+                    <div class="row mt-3">
+                        <div class="col-6 border-end border-secondary border-opacity-25">
+                            <h4>Dato</h4>
+                            <p class="small">Elemento grezzo, privo di contesto (es. "25").</p>
+                        </div>
+                        <div class="col-6">
+                            <h4>Informazione</h4>
+                            <p class="small">Dato elaborato e utile (es. "25 gradi").</p>
+                        </div>
+                    </div>
+                    <p class="mt-3">L'informatica è la scienza dell'elaborazione <strong>sistematica, rigorosa e ripetibile</strong>.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="glass-card">
+                    <span class="badge-info">Logica</span>
+                    <h3>L'Algoritmo</h3>
+                    <p>Sequenza finita e precisa di operazioni per risolvere un problema (es. ricetta di cucina).</p>
+                    <div class="math-box">
+                        Input + Procedura (Passi) = Output
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">3. Architettura del Calcolatore</h2>
+        <div class="row g-4">
+            <div class="col-md-12">
+                <div class="glass-card">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h3>Il Modello Von Neumann (1945)</h3>
+                            <p>Tutti i computer moderni si basano su questo schema a blocchi:</p>
+                            <ul class="custom-list row">
+                                <li class="col-md-6"><strong>CPU:</strong> Unità centrale di elaborazione.</li>
+                                <li class="col-md-6"><strong>RAM:</strong> Memoria centrale volatile.</li>
+                                <li class="col-md-6"><strong>BUS:</strong> Canale di comunicazione dati.</li>
+                                <li class="col-md-6"><strong>I/O:</strong> Interfacce per periferiche.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                             <img src="https://placehold.co/500x300/7c3aed/FFF?text=Von+Neumann" class="img-fluid rounded-3 border border-secondary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="glass-card">
+                    <h3>La CPU (Processore)</h3>
+                    <p>Esegue il ciclo <em>Fetch-Decode-Execute</em>. Composta da:</p>
+                    <ul class="custom-list">
+                        <li><strong>ALU:</strong> Unità Aritmetico-Logica.</li>
+                        <li><strong>CU:</strong> Unità di Controllo.</li>
+                        <li><strong>Registri:</strong> Memoria interna ultra-veloce.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="glass-card">
+                    <h3>Memoria & BUS</h3>
+                    <ul class="custom-list">
+                        <li><strong>RAM:</strong> Veloce ma volatile (si cancella spegnendo).</li>
+                        <li><strong>SSD/HDD:</strong> Lenta ma permanente.</li>
+                        <li><strong>Interrupt:</strong> Segnale che avvisa la CPU quando una periferica è pronta (efficienza).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
